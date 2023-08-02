@@ -2,8 +2,6 @@ package com.dashingqi.toast
 
 import android.app.Activity
 import android.content.Context
-import androidx.annotation.NonNull
-import androidx.annotation.Nullable
 import com.dashingqi.toast.const.TOAST_DURATION_DEFAULT
 
 
@@ -25,7 +23,7 @@ object DQToast {
      * 设设置展示的内容
      * @param content String
      */
-    fun makeText(@Nullable content: String): DQToast {
+    fun makeText(content: String): DQToast {
         mContent = content
         return this
     }
@@ -45,7 +43,7 @@ object DQToast {
      * 构建View层级的Toast
      * @return ViewToast
      */
-    fun buildViewToast(@NonNull context: Activity): ViewToast {
+    fun buildViewToast(context: Activity): ViewToast {
         return ViewToast(buildToastConfig(context))
     }
 
@@ -53,7 +51,7 @@ object DQToast {
      * 构建系统层级的Toast
      * @return AppToast
      */
-    fun buildAppToast(@NonNull context: Context): AppToast {
+    fun buildAppToast(context: Context): AppToast {
         return AppToast(buildToastConfig(context))
     }
 
