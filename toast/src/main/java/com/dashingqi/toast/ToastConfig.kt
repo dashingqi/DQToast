@@ -11,7 +11,7 @@ import com.dashingqi.toast.const.TOAST_DURATION_DEFAULT
 class ToastConfig {
 
     /** 时长*/
-    var duration: Long? = TOAST_DURATION_DEFAULT
+    var duration: Long = TOAST_DURATION_DEFAULT
 
     /** 内容*/
     var content: String = ""
